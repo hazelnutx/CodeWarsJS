@@ -1,5 +1,8 @@
-## Here I will put all my CodeWars practice questions.
+![alt rank](https://www.codewars.com/users/hazelnutx/badges/large)
 
-Profile: [hazelnutx](https://www.codewars.com/users/hazelnutx)
+Codewars solutions.
 
-Will be updated from time to time.
+![GitHub top language](https://img.shields.io/github/languages/top/hazelnutx/codewarsjs)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/hazelnutx/codewarsjs)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/hazelnutx/codewarsjs)
+![GitHub last commit](https://img.shields.io/github/last-commit/hazelnutx/codewarsjs)
