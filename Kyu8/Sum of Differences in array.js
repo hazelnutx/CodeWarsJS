@@ -9,8 +9,7 @@
 // If the array is empty or the array has only one element the result should be 0
 
 function sumOfDifferences(arr) {
-    let split = arr.toString().split("");
-    return split;
+    return arr.length <= 1 ? 0 : Math.max(...arr) - Math.min(...arr);
 }
 console.log(sumOfDifferences([1, 2, 10])); // 9
 console.log(sumOfDifferences([-3, -2, -1])); // 2
