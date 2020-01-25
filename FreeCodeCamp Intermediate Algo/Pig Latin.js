@@ -14,20 +14,21 @@
  * Time on this algorithm: 40 mins (1.1.2020)
  */
 
-function translatePigLatin(str) {
-    let vowel = "aeiou";
+const translatePigLatin = str => {
+    let consonatRegex = /^[^aeiou]+/;
+    let myConsonat = str.match(consonatRegex);
+    // if there's a match, save it
 
-    for (let i = 0; i < str.length; i++) {
-        for (let j = 0; i < vowel.length; j++) {
-            if (str[i] === vowel[j]) {
-                return `${str}way`;
-            } else if (str[i] !== vowel[j]) {
-                let result = str[i].some(el => el === vowel[j]);
-                return `${result}ay`;
-            }
-        }
-    }
-}
+    // check if it exists, if the regex pattern is found (starts with consonats),
+    // it deletes match, adds the match at the end and adds ay to the end
+    // otherwise, if regex pattern not found (deosn't match)(starts with vowels), just add 'way' at the end
+    return myConsonat !== null
+        ? str
+              .replace(consonatRegex, "")
+              .concat(myConsonat)
+              .concat("ay")
+        : str.concat("way");
+};
 
 console.log(translatePigLatin("consonant")); // onsonantcay
 console.log(translatePigLatin("california")); //aliforniacay
